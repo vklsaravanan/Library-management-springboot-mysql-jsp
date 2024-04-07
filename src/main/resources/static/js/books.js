@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function() {
-	
+
 	// book CREATE Form Handler
 
 	$('#bookCreateForm').submit(function(event) {
@@ -82,42 +82,48 @@ $(document).ready(function() {
 });
 
 function validateBookForm() {
-    var title = document.getElementById("title").value;
-    var author = document.getElementById("author").value;
-    var isbn = document.getElementById("isbn").value;
-    var year = document.getElementById("year").value;
-    var genre = document.getElementById("genre").value;
-    var avl_count = document.getElementById("avl_count").value;
+	var title = document.getElementById("title").value;
+	var author = document.getElementById("author").value;
+	var isbn = document.getElementById("isbn").value;
+	var year = document.getElementById("year").value;
+	var genre = document.getElementById("genre").value;
+	var avl_count = document.getElementById("avl_count").value;
 
-    if (title.trim() === "") {
-        alert("Title cannot be empty");
-        return false;
-    }
+	if (title.trim() === "") {
+		alert("Title cannot be empty");
+		return false;
+	}
 
-    if (author.trim() === "") {
-        alert("Author cannot be empty");
-        return false;
-    }
+	if (author.trim() === "") {
+		alert("Author cannot be empty");
+		return false;
+	}
 
-    if (isbn.trim() === "") {
-        alert("ISBN cannot be empty");
-        return false;
-    }
+	if (isbn.trim() === "") {
+		alert("ISBN cannot be empty");
+		return false;
+	}
 
-    var currentYear = new Date().getFullYear();
-    if (year < 1900 || year > currentYear) {
-        alert("Year must be between 1900 to " + currentYear);
-        return false;
-    }
+	var currentYear = new Date().getFullYear();
+	if (year < 1900 || year > currentYear) {
+		alert("Year must be between 1900 to " + currentYear);
+		return false;
+	}
 
-    if (genre === "") {
-        alert("Please select a genre");
-        return false;
-    }
+	if (genre === "") {
+		alert("Please select a genre");
+		return false;
+	}
 
-    if (avl_count.trim() === "") {
-        alert("Available Count cannot be empty");
-        return false;
-    }
-    return true;
+	if (avl_count.trim() === "") {
+		alert("Available Count cannot be empty");
+		return false;
+	}
+	else {
+		if (!(avl_count.trim() > -1 && avl_count.trim() < 16)) {
+			alert("available book must be 0 to 16");
+			return false;
+		}
+	}
+	return true;
 }

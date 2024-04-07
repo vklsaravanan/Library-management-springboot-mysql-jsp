@@ -4,6 +4,21 @@
 
 function validateUserBookForm() {
 
+	var option = $('#studentSelect').val();
+	if (!option) {
+		alert("Please select an Student!");
+		return false;
+	}
+	option = $('#bookSelect').val();
+	if (!option) {
+		alert("Please select an Book!");
+		return false;
+	}
+	option = $('#days').val();
+	if (!option || !(option>0 && option<16)) {
+		alert("days must be 1 to 15 days!");
+		return false;
+	}
 	return true;
 }
 
@@ -13,7 +28,7 @@ $(document).ready(function() {
 	$('#studentSelect').bsSelect();
 	$('#bookSelect').bsSelect();
 
-// book CREATE Form Handler
+	// book CREATE Form Handler
 
 	$('#libraryHistoryCreateForm').submit(function(event) {
 		event.preventDefault();

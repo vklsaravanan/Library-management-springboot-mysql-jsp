@@ -15,9 +15,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class UserInfoDetails implements UserDetails{
 	
 	private String username;
-	
+
 	private String password;
-	
+
 	private List<GrantedAuthority> roles;
 
 	public UserInfoDetails(User user) {

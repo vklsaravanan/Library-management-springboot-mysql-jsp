@@ -35,7 +35,7 @@
 				<form id="libraryHistoryCreateForm">
 					<div class="mb-3 row justify-content-center">
 						<label for="studentSelect" class="form-label">Select
-							Student:</label> <select class="form-select" id="studentSelect" required
+							Student:</label> <select class="form-select" id="studentSelect"
 							name="studentSelect">
 							<c:forEach items="${users}" var="user">
 								<option value="${user.id}">${user.student_id}-${user.firstName}-${user.email}</option>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="mb-3 row justify-content-center">
 						<label for="bookSelect" class="form-label">select book:</label> <select
-							required class="form-select" id="bookSelect" name="bookSelect">
+							 class="form-select" id="bookSelect" name="bookSelect">
 							<c:forEach items="${books}" var="book">
 								<option value="${book.id}">${book.id}-${book.title}-${book.isbn}</option>
 							</c:forEach>
@@ -53,7 +53,7 @@
 					<div class="mb-3 row justify-content-center">
 						<label for="days" class="form-label">Due Days:<span
 							id="days-count">15</span></label> <input type="number"
-							class="form-control p-0 " id="days" name="numberInput" min="1"
+							class="form-control p-0 " id="days" name="numberInput" min="0"
 							max="15" required value="15">
 					</div>
 					<button type="submit" class="btn btn-success">Submit</button>

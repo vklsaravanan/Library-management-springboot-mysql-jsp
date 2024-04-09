@@ -1,6 +1,6 @@
 # Library Management System
 
-Welcome to our library management application, designed to streamline the process of managing users, and books with ease and efficiency. Our application offers a comprehensive set of features including CRUD operations for users, and books, ensuring seamless management of library resources.
+Welcome to my library management application, designed to streamline the process of managing users, and books with ease and efficiency. My application offers a comprehensive set of features including CRUD operations for users, and books, ensuring seamless management of library resources.
 
 > [!WARNING]
 > This project is intended to showcase my skills as a developer. Please note that unauthorized use or distribution of this project is not permitted. It is meant for educational and demonstration purposes only. If you find this project helpful, feel free to reference it or contribute, but do not claim it as your own.
@@ -24,11 +24,19 @@ Welcome to our library management application, designed to streamline the proces
 
 ## Technologies Used:
 
+
+
+| Software stack  | Technologies |
+| ------------- | ------------- |
+| Frontend | JSP, CSS, Bootstrap, JavaScript, jQuery |
+| Backend | Spring Boot with Security |
+| Database | MySQL |
+
 - **Frontend:** JSP, CSS, Bootstrap, JavaScript, jQuery
 - **Backend:** Spring Boot with Security
 - **Database:** MySQL
 
-Our library application is built with a focus on user experience, security, and reliability, providing a robust platform for managing library resources effectively.
+My library application is built with a focus on user experience, security, and reliability, providing a robust platform for managing library resources effectively.
 
 For more information and updates, visit my website [vklsaravanan.online](http://vklsaravanan.online) and follow us on social media: 
 [Instagram](https://www.instagram.com/vkl_saravanan/) | [linked in](https://www.linkedin.com/in/saravanan--r/) | [stackoverflow](https://stackoverflow.com/users/16570902/saravanan)

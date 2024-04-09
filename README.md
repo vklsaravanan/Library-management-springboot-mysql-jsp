@@ -32,10 +32,6 @@ Welcome to my library management application, designed to streamline the process
 | Backend | Spring Boot with Security |
 | Database | MySQL |
 
-- **Frontend:** JSP, CSS, Bootstrap, JavaScript, jQuery
-- **Backend:** Spring Boot with Security
-- **Database:** MySQL
-
 My library application is built with a focus on user experience, security, and reliability, providing a robust platform for managing library resources effectively.
 
 For more information and updates, visit my website [vklsaravanan.online](http://vklsaravanan.online) and follow us on social media: 
